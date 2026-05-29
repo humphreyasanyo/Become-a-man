@@ -44,9 +44,9 @@ export default function App() {
           Support our project safely. Your personal payment routing info is fully encrypted and hidden for maximum privacy.
         </p>
 
-        {/* $10 Button */}
+        {/* $2 Button */}
         <button 
-          onClick={() => handlePayment(10)}
+          onClick={() => handlePayment(2)}
           style={{
             width: '100%',
             padding: '12px',
@@ -60,12 +60,12 @@ export default function App() {
             marginBottom: '12px'
           }}
         >
-          Send $10.00 {currency}
+          Send $2.00 {currency}
         </button>
 
-        {/* $50 Button */}
+        {/* $5 Button */}
         <button 
-          onClick={() => handlePayment(50)}
+          onClick={() => handlePayment(5)}
           style={{
             width: '100%',
             padding: '12px',
@@ -78,7 +78,7 @@ export default function App() {
             cursor: 'pointer'
           }}
         >
-          Send $50.00 {currency}
+          Send $5.00 {currency}
         </button>
 
         {paymentStatus && (
@@ -90,4 +90,5 @@ export default function App() {
     </div>
   );
 }
+
 
